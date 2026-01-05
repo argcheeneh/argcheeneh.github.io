@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Request an Estimate | Argcheeneh Construction</title>
 
-  <!-- CSS -->
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -24,102 +23,84 @@
   </nav>
 
   <!-- HERO -->
-  <section class="hero estimate-hero" style="background-image:url('assets/images/hero-estimate.jpg')">
+  <section class="hero hero-short" style="background-image:url('assets/images/hero-estimate.jpg')">
     <div class="container hero-content">
-      <h1>Request a Consultation</h1>
-      <p>Thoughtful planning begins with a conversation</p>
-    </div>
-  </section>
-
-  <!-- INTRO -->
-  <section class="section">
-    <div class="container">
-      <h2>Tell Us About Your Project</h2>
-      <p style="max-width:900px;">
-        Every project begins with clear communication and careful planning.
-        Use the form below to tell us about your project. All requests are
-        reviewed personally, and we typically respond within one business day.
-      </p>
+      <h1>Request a Free Estimate</h1>
+      <p>Thoughtful planning. Clear pricing. No pressure.</p>
     </div>
   </section>
 
   <!-- FORM -->
   <section class="section dark">
     <div class="container">
+      <div class="form-wrapper">
 
-      <div class="card" style="max-width:900px;margin:auto;">
+        <div class="form-header">
+          <h2>Tell Us About Your Project</h2>
+          <p>
+            Share a few details and we’ll follow up within one business day.
+            Your information is kept private and never shared.
+          </p>
+        </div>
 
-        <!-- ✅ ACTIVE EMAIL FORM (FormSubmit) -->
-        <form action="https://formsubmit.co/argcheeneh@gmail.com" method="POST">
-
+        <form 
+          action="https://formsubmit.co/argcheeneh@gmail.com" 
+          method="POST" 
+          class="estimate-form"
+        >
           <!-- FormSubmit settings -->
-          <input type="hidden" name="_subject" value="New Estimate Request - Argcheeneh Construction">
-          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_subject" value="New Estimate Request – Argcheeneh Construction">
           <input type="hidden" name="_captcha" value="false">
 
-          <div class="grid" style="grid-template-columns:1fr 1fr;gap:28px;">
+          <div class="form-grid">
             <div>
-              <label><strong>Full Name</strong></label>
-              <input type="text" name="Name" required>
+              <label>Full Name</label>
+              <input type="text" name="name" required>
             </div>
 
             <div>
-              <label><strong>Email Address</strong></label>
-              <input type="email" name="Email" required>
+              <label>Email Address</label>
+              <input type="email" name="email" required>
             </div>
 
             <div>
-              <label><strong>Phone Number</strong></label>
-              <input type="tel" name="Phone">
+              <label>Phone Number</label>
+              <input type="tel" name="phone">
             </div>
 
             <div>
-              <label><strong>Project Type</strong></label>
-              <select name="Project Type" required>
+              <label>Project Type</label>
+              <select name="project_type" required>
                 <option value="">Select one</option>
-                <option>Kitchen Remodeling</option>
-                <option>Bathroom Remodeling</option>
+                <option>Kitchen Remodel</option>
+                <option>Bathroom Remodel</option>
                 <option>Full Home Renovation</option>
-                <option>New Residential Construction</option>
+                <option>New Construction</option>
                 <option>Other</option>
               </select>
             </div>
           </div>
 
-          <label style="display:block;margin-top:34px;"><strong>Project Details</strong></label>
-          <textarea name="Project Details" rows="6"
-            placeholder="Tell us about your goals, scope, location, and timeline."></textarea>
+          <div class="form-full">
+            <label>Project Details</label>
+            <textarea 
+              name="details" 
+              rows="5"
+              placeholder="Tell us about your goals, scope, location, and timeline."
+            ></textarea>
+          </div>
 
-          <p style="margin-top:26px;color:#666;font-size:0.95rem;">
-            Your information is kept private. We respond within one business day.
-          </p>
-
-          <button type="submit" class="btn">Submit Request</button>
+          <div class="form-footer">
+            <p class="form-note">
+              We respond within one business day. No obligation.
+            </p>
+            <button type="submit" class="btn btn-gold">
+              Submit Request
+            </button>
+          </div>
 
         </form>
 
-      </div>
-
-    </div>
-  </section>
-
-  <!-- WHAT HAPPENS NEXT -->
-  <section class="section">
-    <div class="container">
-      <h2>What Happens Next</h2>
-      <div class="grid">
-        <div class="card">
-          <strong>Review</strong>
-          <p>We personally review your request and project details.</p>
-        </div>
-        <div class="card">
-          <strong>Follow-Up</strong>
-          <p>We contact you to clarify scope, timeline, and expectations.</p>
-        </div>
-        <div class="card">
-          <strong>Planning</strong>
-          <p>If aligned, we move into planning and cost evaluation.</p>
-        </div>
       </div>
     </div>
   </section>
@@ -127,7 +108,7 @@
   <!-- FOOTER -->
   <footer class="footer">
     <p>📧 argcheeneh@gmail.com | 📞 (720) 998-8705</p>
-    <p>Free consultations · Thoughtful planning · Professional execution</p>
+    <p>Mon–Fri · 9am–5pm</p>
   </footer>
 
 </body>
