@@ -104,17 +104,28 @@ img {
   position: absolute;
   inset: 0;
   background: linear-gradient(
-    rgba(11,31,26,0.65),
-    rgba(11,31,26,0.78)
+    rgba(11,31,26,0.45),
+    rgba(11,31,26,0.65)
   );
 }
+
 
 
 .hero-content {
   position: relative;
   color: #ffffff;
   max-width: 760px;
+  z-index: 2;
 }
+
+.hero h1 {
+  text-shadow: 0 6px 18px rgba(0,0,0,0.55);
+}
+
+.hero p {
+  text-shadow: 0 4px 14px rgba(0,0,0,0.45);
+}
+
 
 .hero h1 {
   font-size: 3.4rem;
@@ -229,5 +240,15 @@ img {
 
 .footer p {
   margin-bottom: 12px;
+}
+/* HERO CTA FIX */
+.hero .btn {
+  background: var(--gold);
+  color: #111;
+  border: none;
+}
+
+.hero .btn:hover {
+  background: var(--gold-soft);
 }
 
