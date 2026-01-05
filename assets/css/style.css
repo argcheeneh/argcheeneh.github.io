@@ -229,4 +229,15 @@ img {
   opacity: 0.9;
   margin-bottom: 12px;
 }
+/* ---------- CARD FIX FOR DARK SECTIONS ---------- */
+.section.dark .card {
+  background: #ffffff;
+}
+
+.section.dark .card,
+.section.dark .card h3,
+.section.dark .card strong,
+.section.dark .card p {
+  color: var(--text-dark);
+}
 
