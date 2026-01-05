@@ -407,4 +407,7 @@ input[type="submit"]:hover {
   background-color: var(--gold-soft);
   color: #111;
 }
+.logo:hover strong {
+  color: var(--gold);
+}
 
