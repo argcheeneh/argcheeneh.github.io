@@ -361,4 +361,8 @@ textarea:focus {
   height: 2px;
   background: var(--gold);
 }
+/* ---------- FIX ACTIVE STATE FOR BUTTON LINKS ---------- */
+.nav a.btn.active {
+  color: #111; /* force dark text on gold button */
+}
 
