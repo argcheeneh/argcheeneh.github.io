@@ -1,16 +1,32 @@
-/* ===== RESET ===== */
+/* ===============================
+   PREMIUM ARCHITECTURAL THEME
+   Dark Green + Gold
+================================ */
+
+/* RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* ===== GLOBAL ===== */
+/* COLOR SYSTEM */
+:root {
+  --green-dark: #0f2f2a;
+  --green-deep: #123c35;
+  --gold: #c6a55b;
+  --gold-soft: #e2c887;
+  --bg-light: #f7f7f5;
+  --text-dark: #1e1e1e;
+  --text-muted: #555;
+}
+
+/* GLOBAL */
 body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  color: #1f2933;
-  background: #ffffff;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.7;
+  color: var(--text-dark);
+  background: var(--bg-light);
 }
 
 a {
@@ -23,35 +39,56 @@ img {
   display: block;
 }
 
-/* ===== CONTAINER ===== */
+/* CONTAINER */
 .container {
   max-width: 1200px;
   margin: auto;
-  padding: 0 20px;
+  padding: 0 24px;
 }
 
-/* ===== NAV ===== */
+/* NAVIGATION */
 .nav {
-  background: #0f172a;
-  color: white;
+  background: var(--green-dark);
+  border-bottom: 1px solid rgba(198,165,91,0.25);
 }
 
 .nav-inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
+  padding: 26px 0;
+}
+
+.nav strong {
+  font-size: 1.15rem;
+  letter-spacing: 0.5px;
 }
 
 .nav a {
-  margin-left: 25px;
-  font-weight: 600;
-  color: white;
+  margin-left: 32px;
+  font-weight: 500;
+  color: #f0f0f0;
+  position: relative;
 }
 
-/* ===== HERO ===== */
+.nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+  background: var(--gold);
+  transition: width 0.3s ease;
+}
+
+.nav a:hover::after {
+  width: 100%;
+}
+
+/* HERO */
 .hero {
-  height: 75vh;
+  height: 80vh;
   display: flex;
   align-items: center;
   background-size: cover;
@@ -63,71 +100,97 @@ img {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(15, 23, 42, 0.7);
+  background: linear-gradient(
+    rgba(15,47,42,0.85),
+    rgba(15,47,42,0.85)
+  );
 }
 
 .hero-content {
   position: relative;
-  color: white;
-  max-width: 700px;
+  color: #fff;
+  max-width: 720px;
 }
 
 .hero h1 {
-  font-size: 3rem;
-  margin-bottom: 15px;
+  font-size: 3.2rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+  letter-spacing: 0.5px;
 }
 
 .hero p {
-  font-size: 1.2rem;
+  font-size: 1.25rem;
+  color: #e6e6e6;
 }
 
-/* ===== BUTTON ===== */
+/* BUTTON */
 .btn {
   display: inline-block;
-  margin-top: 25px;
-  background: #f59e0b;
-  color: #000;
-  padding: 14px 28px;
-  font-weight: 700;
-  border-radius: 6px;
+  margin-top: 32px;
+  background: var(--gold);
+  color: #1b1b1b;
+  padding: 16px 34px;
+  font-weight: 600;
+  border-radius: 3px;
+  letter-spacing: 0.5px;
+  transition: all 0.25s ease;
 }
 
-/* ===== SECTION ===== */
+.btn:hover {
+  background: var(--gold-soft);
+  transform: translateY(-2px);
+}
+
+/* SECTIONS */
 .section {
-  padding: 80px 0;
+  padding: 110px 0;
 }
 
 .section h2 {
-  font-size: 2.2rem;
-  margin-bottom: 30px;
+  font-size: 2.4rem;
+  font-weight: 500;
+  margin-bottom: 40px;
+  color: var(--green-deep);
 }
 
-/* ===== GRID / CARDS ===== */
+/* GRID / CARDS */
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 40px;
 }
 
 .card {
-  background: #f8fafc;
-  padding: 25px;
-  border-radius: 10px;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 6px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.06);
 }
 
-/* ===== GALLERY ===== */
+.card h3,
+.card strong {
+  color: var(--green-deep);
+}
+
+/* GALLERY */
 .gallery img {
-  border-radius: 12px;
-  height: 260px;
+  border-radius: 10px;
+  height: 280px;
   object-fit: cover;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
 }
 
-/* ===== FOOTER ===== */
+/* FOOTER */
 .footer {
-  background: #0f172a;
-  color: white;
-  padding: 40px 0;
+  background: var(--green-dark);
+  color: #e6e6e6;
+  padding: 70px 0;
   text-align: center;
-  margin-top: 80px;
+  font-size: 0.95rem;
+}
+
+.footer p {
+  margin-bottom: 10px;
 }
 
