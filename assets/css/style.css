@@ -328,4 +328,18 @@ textarea:focus {
     gap: 1rem;
   }
 }
+/* ---------- FIX FORM TEXT ON DARK SECTIONS ---------- */
+.section.dark .form-wrapper,
+.section.dark .form-wrapper h2,
+.section.dark .form-wrapper p,
+.section.dark .form-wrapper label {
+  color: var(--text-dark);
+}
+
+.section.dark .form-wrapper input,
+.section.dark .form-wrapper select,
+.section.dark .form-wrapper textarea {
+  color: var(--text-dark);
+  background: #ffffff;
+}
 
