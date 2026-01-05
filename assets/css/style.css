@@ -240,4 +240,87 @@ img {
 .section.dark .card p {
   color: var(--text-dark);
 }
+/* ---------- ESTIMATE FORM (PREMIUM) ---------- */
+
+.hero-short {
+  min-height: 45vh;
+}
+
+.form-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 3rem;
+  border-radius: 14px;
+  box-shadow: 0 30px 80px rgba(0,0,0,0.25);
+}
+
+.form-header h2 {
+  margin-bottom: 0.5rem;
+}
+
+.form-header p {
+  color: #555;
+  max-width: 600px;
+}
+
+.estimate-form {
+  margin-top: 2.5rem;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.75rem;
+}
+
+.form-full {
+  margin-top: 1.75rem;
+}
+
+label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.35rem;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 0.7rem 0.8rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 0.95rem;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--gold);
+}
+
+.form-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.form-note {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-footer {
+    gap: 1rem;
+  }
+}
 
