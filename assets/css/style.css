@@ -342,4 +342,23 @@ textarea:focus {
   color: var(--text-dark);
   background: #ffffff;
 }
+/* ---------- ACTIVE NAV LINK ---------- */
+.nav a {
+  position: relative;
+  padding-bottom: 4px;
+}
+
+.nav a.active {
+  color: var(--gold);
+}
+
+.nav a.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background: var(--gold);
+}
 
